@@ -1,8 +1,9 @@
 {
   "Parameters": {
-    "Cluster": "Cluster",
+    "Cluster": "testClaster",
     "DesiredCount": "2",
-    "Role": "ecsServiceRole",
+    "Role": "Charlie-DevOps-Monkey",
+    "TargetGroupArm" : "arn:aws:elasticloadbalancing:us-east-2:866742867941:targetgroup/testtarget/727eea0ad667fbc0",
     "Image": {
       "Fn::GetParam": ["MyAppBuild", "build.json", "Image"]
     }
